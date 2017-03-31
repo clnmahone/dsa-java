@@ -1,4 +1,4 @@
-package myDataStructure;
+package myDataStruct;
 
 public class ShortedLink {
 

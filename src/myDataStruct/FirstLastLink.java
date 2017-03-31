@@ -1,4 +1,4 @@
-package myDataStructure;
+package myDataStruct;
 
 class Link {
 	public int data;

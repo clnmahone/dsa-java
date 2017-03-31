@@ -1,4 +1,12 @@
-package graphy;
+package myDataStruct;
+class Vertex {
+	public char lable;
+	public boolean wasVisited;
+	public Vertex(char lable) {
+		this.lable = lable;
+		wasVisited = false;
+	}
+}
 
 public class Graphy {
 	private final int MAX_VERTS = 20;
@@ -28,5 +36,21 @@ public class Graphy {
 	
 	public void displayVertex(int v){
 		System.out.print(vertexList[v].lable);
+	}
+}
+class  GraphyApp{
+	public static void main(String[] args) {
+		Graphy graphy = new Graphy();
+		graphy.addVertex('a');
+		graphy.addVertex('b');
+		graphy.addVertex('c');
+		graphy.addVertex('d');
+		graphy.addEdge(1, 2);
+		graphy.addEdge(2, 1);
+		graphy.addEdge(2, 3);
+		graphy.addEdge(3, 2);
+		graphy.addEdge(1, 3);
+		graphy.addEdge(3, 1);
+		graphy.displayVertex(2);
 	}
 }
