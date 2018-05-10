@@ -1,6 +1,7 @@
 // tree.java
 // demonstrates binary tree
 // to run this program: C>java TreeApp
+package Chap08.tree;
 import java.io.*;
 import java.util.*;               // for Stack class
 ////////////////////////////////////////////////////////////////

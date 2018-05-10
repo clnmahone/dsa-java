@@ -2,6 +2,7 @@
 // demonstrates shell sort
 // to run this program: C>java ShellSortApp
 //--------------------------------------------------------------
+package Chap07.shellSort;
 class ArraySh
    {
    private long[] theArray;          // ref to array theArray

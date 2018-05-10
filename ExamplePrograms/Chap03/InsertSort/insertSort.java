@@ -2,6 +2,7 @@
 // demonstrates insertion sort
 // to run this program: C>java InsertSortApp
 //--------------------------------------------------------------
+package Chap03.InsertSort;
 class ArrayIns
    {
    private long[] a;                 // ref to array a
@@ -37,7 +38,7 @@ class ArrayIns
          while(in>0 && a[in-1] >= temp) // until one is smaller,
             {
             a[in] = a[in-1];            // shift item to right
-            --in;                       // go left one position
+            in--;                       // go left one position
             }
          a[in] = temp;                  // insert marked item
          }  // end for
