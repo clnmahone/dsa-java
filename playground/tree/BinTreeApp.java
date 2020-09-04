@@ -1,4 +1,3 @@
-package myDataStructure;
 
 class Node{
 	public int data;
@@ -56,7 +55,7 @@ class BinTree{
 		}
 		
 	}
-	
+	//to-do
 	public void delet(int key){
 		Node current = root;
 		if(current==null){
