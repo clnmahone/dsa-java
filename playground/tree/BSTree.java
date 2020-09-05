@@ -1,16 +1,16 @@
 
-// class Node {
-//     int val;
-//     Node p;
-//     Node l;
-//     Node r;
-
-//     Node(int val) {
-//         this.val = val;
-//     }
-// }
-
 public class BSTree {
+
+    class Node {
+        int val;
+        Node p;
+        Node l;
+        Node r;
+
+        Node(int val) {
+            this.val = val;
+        }
+    }
 
     private Node root;
 
@@ -32,8 +32,8 @@ public class BSTree {
                 current = current.r;
         }
         z.p = insertPoint;
-        if(insertPoint==null)
-            this.root=z;
+        if (insertPoint == null)
+            this.root = z;
         else if (val < insertPoint.val)
             insertPoint.l = z;
         else
@@ -98,17 +98,6 @@ public class BSTree {
             y.p = x.p;
     }
 
-    // -------------------------RBreplace----------------------
-    public void RB_replace(Node x, Node y) {
-        if (x.p == null)
-            this.root = y;
-        else if (x == x.p.l)
-            x.p.l = y;
-        else
-            x.p.r = y;
-        // if (y != null)
-        y.p = x.p;
-    }
 
     // --------------------rotate---------------------
     public void rotate_left(Node x) {
